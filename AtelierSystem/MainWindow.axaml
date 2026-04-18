@@ -1,0 +1,102 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1024" d:DesignHeight="720"
+        x:Class="AtelierSystem.MainWindow"
+        Title="Лавка Матье"
+        WindowStartupLocation="CenterScreen"
+        ExtendClientAreaToDecorationsHint="True"
+        ExtendClientAreaChromeHints="NoChrome"
+        SystemDecorations="None"
+        Width="1024"
+        Height="720"
+        CanResize="False"
+        RequestedThemeVariant="Light"
+        Background="White">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" 
+                CornerRadius="0"
+                VerticalAlignment="Stretch">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" 
+                            Orientation="Horizontal" 
+                            VerticalAlignment="Center" 
+                            Margin="10,0,0,0">
+                    
+                    <TextBlock Text="Матье" 
+                               FontSize="16" 
+                               VerticalAlignment="Center"
+                               Margin="0,0,20,0"/>
+                    
+                    <Button x:Name="signInBtn" 
+                            Content="Вход"
+                            Padding="15,5" 
+                            Margin="5,0"
+                            FontSize="12"
+                            Background="White"
+                            BorderBrush="Black"
+                            Cursor="Hand"
+                            Click="signInBtn_Click">
+                    </Button>
+                    
+                    <Button x:Name="signUpBtn" 
+                            Content="Регистрация"
+                            Padding="15,5" 
+                            Margin="5,0"
+                            FontSize="12"
+                            Background="White"
+                            BorderBrush="Black"
+                            Cursor="Hand"
+                            Click="signUpBtn_Click">
+                    </Button>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" 
+                            Orientation="Horizontal" 
+                            VerticalAlignment="Center"
+                            Margin="0,0,5,0">
+                    
+                    <Button x:Name="minimizeBtn" 
+                            Content="Свернуть"
+                            Padding="15,5" 
+                            Margin="5,0"
+                            FontSize="12"
+                            Background="White"
+                            BorderBrush="Black"
+                            Cursor="Hand"
+                            Click="minimizeBtn_Click">
+                    </Button>
+                    
+                    <Button x:Name="closeBtn" 
+                            Content="Закрыть"
+                            Padding="15,5" 
+                            Margin="5,0"
+                            FontSize="12"
+                            Background="White"
+                            BorderBrush="Black"
+                            Cursor="Hand"
+                            Click="closeBtn_Click">
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <ContentControl Grid.Row="1" 
+                        x:Name="mainContentControl"
+                        Background="White"
+                        VerticalContentAlignment="Stretch"
+                        HorizontalContentAlignment="Stretch"/>
+    </Grid>
+</Window>

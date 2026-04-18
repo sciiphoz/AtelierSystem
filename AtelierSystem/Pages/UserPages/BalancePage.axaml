@@ -1,0 +1,34 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="AtelierSystem.BalancePage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
+            <Label FontSize="18" FontWeight="Bold">Пополнение баланса</Label>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
+            <Label>Текущий баланс</Label>
+            <TextBox x:Name="currentBalanceBox" Width="250" IsReadOnly="True" FontSize="14" FontWeight="SemiBold"></TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
+            <Label>Сумма пополнения</Label>
+            <TextBox x:Name="amountBox" Width="250" Watermark="Введите сумму"></TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Spacing="10">
+            <Button x:Name="topUpBtn" Padding="15 5" Click="topUpBtn_Click">Пополнить</Button>
+            <Button x:Name="cancelBtn" Padding="15 5" Click="cancelBtn_Click">Отмена</Button>
+        </StackPanel>
+    </Grid>
+</UserControl>

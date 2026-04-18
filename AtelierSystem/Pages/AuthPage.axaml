@@ -1,0 +1,95 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="AtelierSystem.AuthPage"
+             Background="White">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Row="1" Grid.Column="1"
+                Background="#F8F9FA"
+                BorderBrush="#CCCCCC"
+                BorderThickness="1"
+                CornerRadius="8"
+                Padding="30">
+            
+            <StackPanel Spacing="20">
+                
+                <TextBlock Text="Авторизация" 
+                           FontSize="22" 
+                           FontWeight="Bold"
+                           Foreground="#2C3E50"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,10"/>
+                
+                <StackPanel Spacing="5">
+                    <TextBlock Text="Логин" 
+                               FontSize="13" 
+                               Foreground="#555555"/>
+                    <TextBox x:Name="loginBox" 
+                             Watermark="Введите логин"
+                             Padding="10,8"
+                             FontSize="14"
+                             BorderBrush="#CCCCCC"
+                             BorderThickness="1"
+                             CornerRadius="4"/>
+                </StackPanel>
+                
+                <StackPanel Spacing="5">
+                    <TextBlock Text="Пароль" 
+                               FontSize="13" 
+                               Foreground="#555555"/>
+                    <TextBox x:Name="passwordBox" 
+                             PasswordChar="●"
+                             Watermark="Введите пароль"
+                             Padding="10,8"
+                             FontSize="14"
+                             BorderBrush="#CCCCCC"
+                             BorderThickness="1"
+                             CornerRadius="4"/>
+                </StackPanel>
+                
+                <Button x:Name="sendBtn" 
+                        Content="Войти"
+                        Padding="12"
+                        FontSize="14"
+                        FontWeight="SemiBold"
+                        Background="#2C3E50"
+                        Foreground="White"
+                        BorderThickness="0"
+                        CornerRadius="4"
+                        Cursor="Hand"
+                        Click="sendBtn_Click"
+                        Margin="0,15,0,0">
+                    <Button.Styles>
+                        <Style Selector="Button:pointerover">
+                            <Setter Property="Background" Value="#34495E"/>
+                        </Style>
+                        <Style Selector="Button:pressed">
+                            <Setter Property="Background" Value="#1A252F"/>
+                        </Style>
+                    </Button.Styles>
+                </Button>
+                
+                <TextBlock Text="Нет аккаунта? Нажмите «Регистрация» в верхнем меню"
+                           FontSize="11"
+                           Foreground="#888888"
+                           HorizontalAlignment="Center"
+                           Margin="0,10,0,0"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>

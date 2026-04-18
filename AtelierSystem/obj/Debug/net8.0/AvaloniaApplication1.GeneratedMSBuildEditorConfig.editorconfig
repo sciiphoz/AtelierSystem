@@ -1,0 +1,52 @@
+is_global = true
+build_property.AvaloniaNameGeneratorIsEnabled = true
+build_property.AvaloniaNameGeneratorBehavior = InitializeComponent
+build_property.AvaloniaNameGeneratorDefaultFieldModifier = internal
+build_property.AvaloniaNameGeneratorFilterByPath = *
+build_property.AvaloniaNameGeneratorFilterByNamespace = *
+build_property.AvaloniaNameGeneratorViewFileNamingStrategy = NamespaceAndClassName
+build_property.AvaloniaNameGeneratorAttachDevTools = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AvaloniaApplication1
+build_property.ProjectDir = C:\Users\sciiphoz\source\repos\AvaloniaApplication1\AvaloniaApplication1\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/sciiphoz/source/repos/AvaloniaApplication1/AvaloniaApplication1/App.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/sciiphoz/source/repos/AvaloniaApplication1/AvaloniaApplication1/MainWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/sciiphoz/source/repos/AvaloniaApplication1/AvaloniaApplication1/Pages/AuthPage.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/sciiphoz/source/repos/AvaloniaApplication1/AvaloniaApplication1/Pages/ProductPage.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/sciiphoz/source/repos/AvaloniaApplication1/AvaloniaApplication1/Pages/RegPage.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/sciiphoz/source/repos/AvaloniaApplication1/AvaloniaApplication1/Pages/TypePage.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/sciiphoz/source/repos/AvaloniaApplication1/AvaloniaApplication1/Windows/AddProductWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/sciiphoz/source/repos/AvaloniaApplication1/AvaloniaApplication1/Windows/AddTypeWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/sciiphoz/source/repos/AvaloniaApplication1/AvaloniaApplication1/Windows/DataWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/sciiphoz/source/repos/AvaloniaApplication1/AvaloniaApplication1/Windows/EditProductWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

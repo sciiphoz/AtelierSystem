@@ -1,0 +1,33 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="AtelierSystem.QualificationRequestsPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="20,20,20,10">
+            <TextBlock FontSize="20" FontWeight="Bold" HorizontalAlignment="Center">Заявки на повышение квалификации</TextBlock>
+        </StackPanel>
+
+        <ScrollViewer Grid.Row="1">
+            <StackPanel x:Name="requestsPanel" Margin="20,0" Spacing="10"></StackPanel>
+        </ScrollViewer>
+
+        <StackPanel Grid.Row="2" HorizontalAlignment="Center" Margin="0,20">
+            <Button x:Name="refreshBtn" 
+                    Content="Обновить"
+                    Padding="15,5"
+                    Background="White"
+                    BorderBrush="Black"
+                    Cursor="Hand"
+                    Click="refreshBtn_Click">
+            </Button>
+        </StackPanel>
+    </Grid>
+</UserControl>

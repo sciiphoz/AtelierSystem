@@ -1,0 +1,71 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="AtelierSystem.AddServicePage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" HorizontalAlignment="Center" Margin="0,20">
+            <TextBlock FontSize="20" FontWeight="Bold">Добавление услуги</TextBlock>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
+            <Label>Название</Label>
+            <TextBox x:Name="nameBox" Width="350"></TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
+            <Label>Описание</Label>
+            <TextBox x:Name="descriptionBox" Width="350" Height="60" TextWrapping="Wrap" AcceptsReturn="True"></TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
+            <Label>Цена</Label>
+            <TextBox x:Name="priceBox" Width="350"></TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
+            <Label>Категория</Label>
+            <ComboBox x:Name="categoryComboBox" Width="350"></ComboBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
+            <Label>Коллекция</Label>
+            <ComboBox x:Name="collectionComboBox" Width="350"></ComboBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="6" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center" 
+                    Orientation="Horizontal" 
+                    Spacing="10"
+                    Margin="0,20">
+            <Button x:Name="saveBtn" 
+                    Content="Сохранить"
+                    Padding="15,5"
+                    Background="White"
+                    BorderBrush="Black"
+                    Cursor="Hand"
+                    Click="saveBtn_Click">
+            </Button>
+            <Button x:Name="cancelBtn" 
+                    Content="Отмена"
+                    Padding="15,5"
+                    Background="White"
+                    BorderBrush="Black"
+                    Cursor="Hand"
+                    Click="cancelBtn_Click">
+            </Button>
+        </StackPanel>
+    </Grid>
+</UserControl>

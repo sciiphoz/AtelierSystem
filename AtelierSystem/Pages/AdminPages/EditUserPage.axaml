@@ -1,0 +1,71 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="AtelierSystem.EditUserPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" HorizontalAlignment="Center" Margin="0,20">
+            <TextBlock FontSize="20" FontWeight="Bold">Редактирование пользователя</TextBlock>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
+            <Label>ФИО</Label>
+            <TextBox x:Name="fullNameBox" Width="350"></TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
+            <Label>Логин</Label>
+            <TextBox x:Name="loginBox" Width="350"></TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
+            <Label>Email</Label>
+            <TextBox x:Name="emailBox" Width="350"></TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
+            <Label>Баланс</Label>
+            <TextBox x:Name="balanceBox" Width="350"></TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
+            <Label>Роль</Label>
+            <ComboBox x:Name="roleComboBox" Width="350"></ComboBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="6" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center" 
+                    Orientation="Horizontal" 
+                    Spacing="10"
+                    Margin="0,20">
+            <Button x:Name="saveBtn" 
+                    Content="Сохранить"
+                    Padding="15,5"
+                    Background="White"
+                    BorderBrush="Black"
+                    Cursor="Hand"
+                    Click="saveBtn_Click">
+            </Button>
+            <Button x:Name="cancelBtn" 
+                    Content="Отмена"
+                    Padding="15,5"
+                    Background="White"
+                    BorderBrush="Black"
+                    Cursor="Hand"
+                    Click="cancelBtn_Click">
+            </Button>
+        </StackPanel>
+    </Grid>
+</UserControl>
