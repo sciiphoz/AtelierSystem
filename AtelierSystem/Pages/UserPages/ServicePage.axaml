@@ -3,7 +3,9 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="1024" d:DesignHeight="720"
-             x:Class="AtelierSystem.ServicesPage">
+             x:Class="AtelierSystem.ServicePage"
+             Background="White">
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
@@ -52,11 +54,24 @@
                 <StackPanel Grid.Column="2" 
                             Orientation="Horizontal" 
                             VerticalAlignment="Center"
-                            Margin="0,0,10,0">
+                            Margin="0,0,10,0"
+                            Spacing="5">
+                    
+                    <ComboBox x:Name="sortComboBox" 
+                              Width="120" 
+                              SelectionChanged="sortComboBox_SelectionChanged">
+                        <ComboBox.Items>
+                            <ComboBoxItem>По умолчанию</ComboBoxItem>
+                            <ComboBoxItem>По алфавиту (А-Я)</ComboBoxItem>
+                            <ComboBoxItem>По алфавиту (Я-А)</ComboBoxItem>
+                            <ComboBoxItem>По цене (возр.)</ComboBoxItem>
+                            <ComboBoxItem>По цене (убыв.)</ComboBoxItem>
+                        </ComboBox.Items>
+                    </ComboBox>
+                    
                     <TextBox x:Name="searchBox" 
-                             Width="200" 
+                             Width="180" 
                              Watermark="Поиск"
-                             Margin="0,0,5,0"
                              TextChanged="searchBox_TextChanged">
                     </TextBox>
                 </StackPanel>

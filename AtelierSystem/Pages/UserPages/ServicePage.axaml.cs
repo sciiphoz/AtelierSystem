@@ -3,27 +3,27 @@ using Avalonia.Interactivity;
 using Avalonia.Media.Imaging;
 using Avalonia.Platform;
 using AtelierSystem.DBContext;
-using MsBox.Avalonia;
-using MsBox.Avalonia.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace AtelierSystem;
 
-public partial class ServicesPage : UserControl
+public partial class ServicePage : UserControl
 {
     private List<Service> allServices;
     private List<Service> filteredServices;
     private int currentPage = 1;
     private int itemsPerPage = 3;
     private string currentCategory = "Кастомизация";
+    private string currentSort = "По умолчанию";
 
-    public ServicesPage()
+    public ServicePage()
     {
         InitializeComponent();
         LoadServices();
         UpdateServicesDisplay();
+        sortComboBox.SelectedIndex = 0;
     }
 
     private void LoadServices()
@@ -49,6 +49,7 @@ public partial class ServicesPage : UserControl
 
         ApplyCollectionFilters();
         ApplySearchFilter();
+        ApplySorting();
 
         currentPage = 1;
         UpdateServicesDisplay();
@@ -82,6 +83,25 @@ public partial class ServicesPage : UserControl
                 s.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase) ||
                 (s.Description != null && s.Description.Contains(searchText, StringComparison.OrdinalIgnoreCase))
             ).ToList();
+        }
+    }
+
+    private void ApplySorting()
+    {
+        switch (currentSort)
+        {
+            case "По алфавиту (А-Я)":
+                filteredServices = filteredServices.OrderBy(s => s.Name).ToList();
+                break;
+            case "По алфавиту (Я-А)":
+                filteredServices = filteredServices.OrderByDescending(s => s.Name).ToList();
+                break;
+            case "По цене (возр.)":
+                filteredServices = filteredServices.OrderBy(s => s.Price).ToList();
+                break;
+            case "По цене (убыв.)":
+                filteredServices = filteredServices.OrderByDescending(s => s.Price).ToList();
+                break;
         }
     }
 
@@ -199,18 +219,16 @@ public partial class ServicesPage : UserControl
             Text = $"Категория: {service.Category?.Name ?? "Не указана"}"
         });
 
-        var appointBtn = new Button
+        var masterInfo = GetMasterInfo(service.Id);
+        if (!string.IsNullOrEmpty(masterInfo))
         {
-            Content = "Записаться",
-            Margin = new Avalonia.Thickness(0, 10, 0, 0),
-            Padding = new Avalonia.Thickness(15, 5),
-            Background = Avalonia.Media.Brushes.White,
-            BorderBrush = Avalonia.Media.Brushes.Black,
-            Cursor = new Avalonia.Input.Cursor(Avalonia.Input.StandardCursorType.Hand),
-            Tag = service
-        };
-        appointBtn.Click += appointBtn_Click;
-        infoPanel.Children.Add(appointBtn);
+            infoPanel.Children.Add(new TextBlock
+            {
+                Text = masterInfo,
+                FontSize = 13,
+                Foreground = Avalonia.Media.Brushes.DimGray
+            });
+        }
 
         Grid.SetColumn(infoPanel, 1);
         grid.Children.Add(infoPanel);
@@ -225,36 +243,16 @@ public partial class ServicesPage : UserControl
         int imageNumber;
 
         if (service.Id > 10)
-        {
             imageNumber = service.Id - 10;
-        }
         else
             imageNumber = service.Id;
 
         if (category == "Кастомизация")
-        {
             return $"avares://AtelierSystem/Assets/Data/Custom/Pr{imageNumber}.jpg";
-        }
         else if (category == "Создание косплея")
-        {
             return $"avares://AtelierSystem/Assets/Data/Cosplay/KL{imageNumber}.jpg";
-        }
 
         return string.Empty;
-    }
-
-    private async void appointBtn_Click(object? sender, RoutedEventArgs e)
-    {
-        if (sender is Button btn && btn.Tag is Service service)
-        {
-            var parent = this.VisualRoot as Window;
-            var appointmentPage = new AppointmentPage(service);
-
-            if (parent is UserWindow UserWindow)
-            {
-                UserWindow.mainContentControl.Content = appointmentPage;
-            }
-        }
     }
 
     private void UpdatePaginationInfo()
@@ -286,9 +284,13 @@ public partial class ServicesPage : UserControl
         ApplyFilters();
     }
 
-    private void searchBtn_Click(object? sender, RoutedEventArgs e)
+    private void sortComboBox_SelectionChanged(object? sender, SelectionChangedEventArgs e)
     {
-        ApplyFilters();
+        if (sortComboBox.SelectedItem is ComboBoxItem item)
+        {
+            currentSort = item.Content?.ToString() ?? "По умолчанию";
+            ApplyFilters();
+        }
     }
 
     private void filter_Changed(object? sender, RoutedEventArgs e)
@@ -304,6 +306,7 @@ public partial class ServicesPage : UserControl
         cyberpunkFilter.IsChecked = false;
         noirFilter.IsChecked = false;
         searchBox.Text = string.Empty;
+        sortComboBox.SelectedIndex = 0;
 
         ApplyFilters();
     }
@@ -325,5 +328,37 @@ public partial class ServicesPage : UserControl
             currentPage++;
             UpdateServicesDisplay();
         }
+    }
+
+    private string GetMasterInfo(int serviceId)
+    {
+        var masterServices = App.dataBaseContext.MasterServices
+            .Where(ms => ms.ServiceId == serviceId)
+            .ToList();
+
+        if (!masterServices.Any())
+            return string.Empty;
+
+        var masterNames = new List<string>();
+
+        foreach (var ms in masterServices)
+        {
+            var master = App.dataBaseContext.Masters.FirstOrDefault(m => m.Id == ms.MasterId);
+            if (master != null)
+            {
+                var user = App.dataBaseContext.Users.FirstOrDefault(u => u.Id == master.UserId);
+                if (user != null)
+                {
+                    masterNames.Add($"{user.FullName} ({master.QualificationLevel})");
+                }
+            }
+        }
+
+        if (!masterNames.Any())
+            return string.Empty;
+
+        return masterNames.Count == 1
+            ? $"Мастер: {masterNames[0]}"
+            : $"Мастера: {string.Join(", ", masterNames)}";
     }
 }

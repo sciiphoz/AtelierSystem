@@ -1,3 +1,4 @@
+using AtelierSystem;
 using AtelierSystem.DBContext;
 using AtelierSystem;
 using Avalonia.Controls;
@@ -47,19 +48,11 @@ public partial class AuthPage : UserControl
                 var parent = this.VisualRoot as Window;
                 Window nav;
 
-                if (user.RoleId == 4) 
-                {
-                    nav = new MasterWindow();
-                }
-                else if (user.RoleId == 3)
-                {
-                    nav = new AdminWindow();
-                }
-                else if (user.RoleId == 2)
+                if (user.RoleId == 2) 
                 {
                     nav = new ModeratorWindow();
                 }
-                else
+                else 
                 {
                     nav = new UserWindow();
                 }

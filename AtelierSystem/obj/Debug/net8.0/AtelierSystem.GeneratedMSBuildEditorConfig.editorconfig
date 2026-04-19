@@ -27,22 +27,7 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [C:/Users/sciiphoz/source/repos/AtelierSystem/AtelierSystem/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/sciiphoz/source/repos/AtelierSystem/AtelierSystem/Pages/AdminPages/AddEmployeePage.axaml]
-build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
-
-[C:/Users/sciiphoz/source/repos/AtelierSystem/AtelierSystem/Pages/AdminPages/EditUserPage.axaml]
-build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
-
-[C:/Users/sciiphoz/source/repos/AtelierSystem/AtelierSystem/Pages/AdminPages/UsersPage.axaml]
-build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
-
 [C:/Users/sciiphoz/source/repos/AtelierSystem/AtelierSystem/Pages/AuthPage.axaml]
-build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
-
-[C:/Users/sciiphoz/source/repos/AtelierSystem/AtelierSystem/Pages/MasterPages/MasterAppointmentsPage.axaml]
-build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
-
-[C:/Users/sciiphoz/source/repos/AtelierSystem/AtelierSystem/Pages/MasterPages/QualificationPage.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/sciiphoz/source/repos/AtelierSystem/AtelierSystem/Pages/ModeratorPages/AddServicePage.axaml]
@@ -51,40 +36,13 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [C:/Users/sciiphoz/source/repos/AtelierSystem/AtelierSystem/Pages/ModeratorPages/EditServicePage.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/sciiphoz/source/repos/AtelierSystem/AtelierSystem/Pages/ModeratorPages/MasterServicesPage.axaml]
-build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
-
 [C:/Users/sciiphoz/source/repos/AtelierSystem/AtelierSystem/Pages/ModeratorPages/ModeratorServicesPage.axaml]
-build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
-
-[C:/Users/sciiphoz/source/repos/AtelierSystem/AtelierSystem/Pages/ModeratorPages/QualificationRequestsPage.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/sciiphoz/source/repos/AtelierSystem/AtelierSystem/Pages/RegPage.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/sciiphoz/source/repos/AtelierSystem/AtelierSystem/Pages/UserPages/AppointmentPage.axaml]
-build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
-
-[C:/Users/sciiphoz/source/repos/AtelierSystem/AtelierSystem/Pages/UserPages/BalancePage.axaml]
-build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
-
-[C:/Users/sciiphoz/source/repos/AtelierSystem/AtelierSystem/Pages/UserPages/MyAppointmentsPage.axaml]
-build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
-
-[C:/Users/sciiphoz/source/repos/AtelierSystem/AtelierSystem/Pages/UserPages/ProfilePage.axaml]
-build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
-
-[C:/Users/sciiphoz/source/repos/AtelierSystem/AtelierSystem/Pages/UserPages/ReviewPage.axaml]
-build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
-
 [C:/Users/sciiphoz/source/repos/AtelierSystem/AtelierSystem/Pages/UserPages/ServicePage.axaml]
-build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
-
-[C:/Users/sciiphoz/source/repos/AtelierSystem/AtelierSystem/Windows/NavigationWindows/AdminWindow.axaml]
-build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
-
-[C:/Users/sciiphoz/source/repos/AtelierSystem/AtelierSystem/Windows/NavigationWindows/MasterWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/sciiphoz/source/repos/AtelierSystem/AtelierSystem/Windows/NavigationWindows/ModeratorWindow.axaml]

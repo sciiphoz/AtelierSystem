@@ -1,9 +1,8 @@
+using AtelierSystem.DBContext;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Media.Imaging;
 using Avalonia.Platform;
-using AtelierSystem.DBContext;
-using AtelierSystem;
 using MsBox.Avalonia;
 using MsBox.Avalonia.Enums;
 using System;
@@ -29,6 +28,7 @@ public partial class ModeratorWindow : Window
         }
         catch
         {
+            // ≈сли логотип не найден, оставл€ем пустым
         }
     }
 
@@ -66,14 +66,9 @@ public partial class ModeratorWindow : Window
         mainContentControl.Content = new ModeratorServicesPage();
     }
 
-    private void masterServicesBtn_Click(object? sender, RoutedEventArgs e)
+    private void addServiceBtn_Click(object? sender, RoutedEventArgs e)
     {
-        mainContentControl.Content = new MasterServicesPage();
-    }
-
-    private void qualificationRequestsBtn_Click(object? sender, RoutedEventArgs e)
-    {
-        mainContentControl.Content = new QualificationRequestsPage();
+        mainContentControl.Content = new AddServicePage();
     }
 
     private async void logoutBtn_Click(object? sender, RoutedEventArgs e)
