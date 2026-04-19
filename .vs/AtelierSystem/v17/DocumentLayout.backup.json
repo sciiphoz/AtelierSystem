@@ -3,8 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DD411990-95FB-4E55-BA0B-04ABC4530694}|AtelierSystem\\AtelierSystem.csproj|c:\\users\\sciiphoz\\source\\repos\\ateliersystem\\ateliersystem\\windows\\navigationwindows\\moderatorwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{DD411990-95FB-4E55-BA0B-04ABC4530694}|AtelierSystem\\AtelierSystem.csproj|solutionrelative:ateliersystem\\windows\\navigationwindows\\moderatorwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD411990-95FB-4E55-BA0B-04ABC4530694}|AtelierSystem\\AtelierSystem.csproj|c:\\users\\sciiphoz\\source\\repos\\ateliersystem\\ateliersystem\\pages\\moderatorpages\\moderatorservicespage.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{DD411990-95FB-4E55-BA0B-04ABC4530694}|AtelierSystem\\AtelierSystem.csproj|solutionrelative:ateliersystem\\pages\\moderatorpages\\moderatorservicespage.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD411990-95FB-4E55-BA0B-04ABC4530694}|AtelierSystem\\AtelierSystem.csproj|c:\\users\\sciiphoz\\source\\repos\\ateliersystem\\ateliersystem\\pages\\regpage.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{DD411990-95FB-4E55-BA0B-04ABC4530694}|AtelierSystem\\AtelierSystem.csproj|solutionrelative:ateliersystem\\pages\\regpage.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD411990-95FB-4E55-BA0B-04ABC4530694}|AtelierSystem\\AtelierSystem.csproj|c:\\users\\sciiphoz\\source\\repos\\ateliersystem\\ateliersystem\\windows\\navigationwindows\\userwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{DD411990-95FB-4E55-BA0B-04ABC4530694}|AtelierSystem\\AtelierSystem.csproj|solutionrelative:ateliersystem\\windows\\navigationwindows\\userwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD411990-95FB-4E55-BA0B-04ABC4530694}|AtelierSystem\\AtelierSystem.csproj|c:\\users\\sciiphoz\\source\\repos\\ateliersystem\\ateliersystem\\pages\\moderatorpages\\moderatorservicespage.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD411990-95FB-4E55-BA0B-04ABC4530694}|AtelierSystem\\AtelierSystem.csproj|solutionrelative:ateliersystem\\pages\\moderatorpages\\moderatorservicespage.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD411990-95FB-4E55-BA0B-04ABC4530694}|AtelierSystem\\AtelierSystem.csproj|c:\\users\\sciiphoz\\source\\repos\\ateliersystem\\ateliersystem\\pages\\userpages\\servicepage.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD411990-95FB-4E55-BA0B-04ABC4530694}|AtelierSystem\\AtelierSystem.csproj|solutionrelative:ateliersystem\\pages\\userpages\\servicepage.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{22505485-8DF7-4A6B-8A51-80E03E6F1C90}|SystemTests\\SystemTests.csproj|c:\\users\\sciiphoz\\source\\repos\\ateliersystem\\systemtests\\serviceupdatetimetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{22505485-8DF7-4A6B-8A51-80E03E6F1C90}|SystemTests\\SystemTests.csproj|solutionrelative:systemtests\\serviceupdatetimetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD411990-95FB-4E55-BA0B-04ABC4530694}|AtelierSystem\\AtelierSystem.csproj|c:\\users\\sciiphoz\\source\\repos\\ateliersystem\\ateliersystem\\pages\\userpages\\servicepage.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{DD411990-95FB-4E55-BA0B-04ABC4530694}|AtelierSystem\\AtelierSystem.csproj|solutionrelative:ateliersystem\\pages\\userpages\\servicepage.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{22505485-8DF7-4A6B-8A51-80E03E6F1C90}|SystemTests\\SystemTests.csproj|c:\\users\\sciiphoz\\source\\repos\\ateliersystem\\systemtests\\systemtests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -23,14 +51,6 @@
       "RelativeMoniker": "D:0:0:{DD411990-95FB-4E55-BA0B-04ABC4530694}|AtelierSystem\\AtelierSystem.csproj|solutionrelative:ateliersystem\\pages\\authpage.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD411990-95FB-4E55-BA0B-04ABC4530694}|AtelierSystem\\AtelierSystem.csproj|c:\\users\\sciiphoz\\source\\repos\\ateliersystem\\ateliersystem\\pages\\userpages\\servicepage.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD411990-95FB-4E55-BA0B-04ABC4530694}|AtelierSystem\\AtelierSystem.csproj|solutionrelative:ateliersystem\\pages\\userpages\\servicepage.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD411990-95FB-4E55-BA0B-04ABC4530694}|AtelierSystem\\AtelierSystem.csproj|c:\\users\\sciiphoz\\source\\repos\\ateliersystem\\ateliersystem\\pages\\moderatorpages\\moderatorservicespage.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD411990-95FB-4E55-BA0B-04ABC4530694}|AtelierSystem\\AtelierSystem.csproj|solutionrelative:ateliersystem\\pages\\moderatorpages\\moderatorservicespage.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DD411990-95FB-4E55-BA0B-04ABC4530694}|AtelierSystem\\AtelierSystem.csproj|c:\\users\\sciiphoz\\source\\repos\\ateliersystem\\ateliersystem\\windows\\navigationwindows\\moderatorwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD411990-95FB-4E55-BA0B-04ABC4530694}|AtelierSystem\\AtelierSystem.csproj|solutionrelative:ateliersystem\\windows\\navigationwindows\\moderatorwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -42,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -51,66 +71,62 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "TestDataBaseContext.cs",
-              "DocumentMoniker": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\SystemTests\\TestDataBaseContext.cs",
-              "RelativeDocumentMoniker": "SystemTests\\TestDataBaseContext.cs",
-              "ToolTip": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\SystemTests\\TestDataBaseContext.cs",
-              "RelativeToolTip": "SystemTests\\TestDataBaseContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-19T09:29:34.569Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ServiceUpdateTimeTests.cs",
-              "DocumentMoniker": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\SystemTests\\ServiceUpdateTimeTests.cs",
-              "RelativeDocumentMoniker": "SystemTests\\ServiceUpdateTimeTests.cs",
-              "ToolTip": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\SystemTests\\ServiceUpdateTimeTests.cs",
-              "RelativeToolTip": "SystemTests\\ServiceUpdateTimeTests.cs",
-              "ViewState": "AgIAALAAAAAAAAAAAAAcwMUAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-19T09:22:07.308Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Usings.cs",
-              "DocumentMoniker": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\SystemTests\\Usings.cs",
-              "RelativeDocumentMoniker": "SystemTests\\Usings.cs",
-              "ToolTip": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\SystemTests\\Usings.cs",
-              "RelativeToolTip": "SystemTests\\Usings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-19T09:21:51.53Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SystemTests",
-              "DocumentMoniker": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\SystemTests\\SystemTests.csproj",
-              "RelativeDocumentMoniker": "SystemTests\\SystemTests.csproj",
-              "ToolTip": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\SystemTests\\SystemTests.csproj",
-              "RelativeToolTip": "SystemTests\\SystemTests.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-04-19T09:20:56.313Z",
+              "Title": "RegPage.axaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\AtelierSystem\\Pages\\RegPage.axaml",
+              "RelativeDocumentMoniker": "AtelierSystem\\Pages\\RegPage.axaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\AtelierSystem\\Pages\\RegPage.axaml",
+              "RelativeToolTip": "AtelierSystem\\Pages\\RegPage.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-19T12:23:10.897Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AuthPage.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\AtelierSystem\\Pages\\AuthPage.axaml.cs",
-              "RelativeDocumentMoniker": "AtelierSystem\\Pages\\AuthPage.axaml.cs",
-              "ToolTip": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\AtelierSystem\\Pages\\AuthPage.axaml.cs",
-              "RelativeToolTip": "AtelierSystem\\Pages\\AuthPage.axaml.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAIwEkAAAAJAAAAAAAAAA==",
+              "Title": "ModeratorServicesPage.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\AtelierSystem\\Pages\\ModeratorPages\\ModeratorServicesPage.axaml.cs",
+              "RelativeDocumentMoniker": "AtelierSystem\\Pages\\ModeratorPages\\ModeratorServicesPage.axaml.cs",
+              "ToolTip": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\AtelierSystem\\Pages\\ModeratorPages\\ModeratorServicesPage.axaml.cs",
+              "RelativeToolTip": "AtelierSystem\\Pages\\ModeratorPages\\ModeratorServicesPage.axaml.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAQwB0AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-19T08:09:56.615Z",
+              "WhenOpened": "2026-04-19T07:59:03.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\AtelierSystem\\Windows\\NavigationWindows\\UserWindow.axaml",
+              "RelativeDocumentMoniker": "AtelierSystem\\Windows\\NavigationWindows\\UserWindow.axaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\AtelierSystem\\Windows\\NavigationWindows\\UserWindow.axaml",
+              "RelativeToolTip": "AtelierSystem\\Windows\\NavigationWindows\\UserWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-19T11:59:31.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ModeratorServicesPage.axaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\AtelierSystem\\Pages\\ModeratorPages\\ModeratorServicesPage.axaml",
+              "RelativeDocumentMoniker": "AtelierSystem\\Pages\\ModeratorPages\\ModeratorServicesPage.axaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\AtelierSystem\\Pages\\ModeratorPages\\ModeratorServicesPage.axaml",
+              "RelativeToolTip": "AtelierSystem\\Pages\\ModeratorPages\\ModeratorServicesPage.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-19T12:03:34.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ModeratorWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\AtelierSystem\\Windows\\NavigationWindows\\ModeratorWindow.axaml",
+              "RelativeDocumentMoniker": "AtelierSystem\\Windows\\NavigationWindows\\ModeratorWindow.axaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\AtelierSystem\\Windows\\NavigationWindows\\ModeratorWindow.axaml",
+              "RelativeToolTip": "AtelierSystem\\Windows\\NavigationWindows\\ModeratorWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-19T11:59:41.702Z",
               "EditorCaption": ""
             },
             {
@@ -121,7 +137,7 @@
               "RelativeDocumentMoniker": "AtelierSystem\\Pages\\UserPages\\ServicePage.axaml.cs",
               "ToolTip": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\AtelierSystem\\Pages\\UserPages\\ServicePage.axaml.cs",
               "RelativeToolTip": "AtelierSystem\\Pages\\UserPages\\ServicePage.axaml.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAgwCsAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-19T08:02:02.398Z",
               "EditorCaption": ""
@@ -129,19 +145,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ModeratorServicesPage.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\AtelierSystem\\Pages\\ModeratorPages\\ModeratorServicesPage.axaml.cs",
-              "RelativeDocumentMoniker": "AtelierSystem\\Pages\\ModeratorPages\\ModeratorServicesPage.axaml.cs",
-              "ToolTip": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\AtelierSystem\\Pages\\ModeratorPages\\ModeratorServicesPage.axaml.cs",
-              "RelativeToolTip": "AtelierSystem\\Pages\\ModeratorPages\\ModeratorServicesPage.axaml.cs",
-              "ViewState": "AgIAAD4BAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Title": "ServiceUpdateTimeTests.cs",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\SystemTests\\ServiceUpdateTimeTests.cs",
+              "RelativeDocumentMoniker": "SystemTests\\ServiceUpdateTimeTests.cs",
+              "ToolTip": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\SystemTests\\ServiceUpdateTimeTests.cs",
+              "RelativeToolTip": "SystemTests\\ServiceUpdateTimeTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-19T07:59:03.433Z",
+              "WhenOpened": "2026-04-19T09:22:07.308Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "ServicePage.axaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\AtelierSystem\\Pages\\UserPages\\ServicePage.axaml",
+              "RelativeDocumentMoniker": "AtelierSystem\\Pages\\UserPages\\ServicePage.axaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\AtelierSystem\\Pages\\UserPages\\ServicePage.axaml",
+              "RelativeToolTip": "AtelierSystem\\Pages\\UserPages\\ServicePage.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-19T11:51:30.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Usings.cs",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\SystemTests\\Usings.cs",
+              "RelativeDocumentMoniker": "SystemTests\\Usings.cs",
+              "ToolTip": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\SystemTests\\Usings.cs",
+              "RelativeToolTip": "SystemTests\\Usings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T09:21:51.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TestDataBaseContext.cs",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\SystemTests\\TestDataBaseContext.cs",
+              "RelativeDocumentMoniker": "SystemTests\\TestDataBaseContext.cs",
+              "ToolTip": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\SystemTests\\TestDataBaseContext.cs",
+              "RelativeToolTip": "SystemTests\\TestDataBaseContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T09:29:34.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SystemTests.csproj",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\SystemTests\\SystemTests.csproj",
+              "RelativeDocumentMoniker": "SystemTests\\SystemTests.csproj",
+              "ToolTip": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\SystemTests\\SystemTests.csproj",
+              "RelativeToolTip": "SystemTests\\SystemTests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-19T09:20:56.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AuthPage.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\AtelierSystem\\Pages\\AuthPage.axaml.cs",
+              "RelativeDocumentMoniker": "AtelierSystem\\Pages\\AuthPage.axaml.cs",
+              "ToolTip": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\AtelierSystem\\Pages\\AuthPage.axaml.cs",
+              "RelativeToolTip": "AtelierSystem\\Pages\\AuthPage.axaml.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAIwEkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T08:09:56.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "ModeratorWindow.axaml.cs",
               "DocumentMoniker": "C:\\Users\\sciiphoz\\source\\repos\\AtelierSystem\\AtelierSystem\\Windows\\NavigationWindows\\ModeratorWindow.axaml.cs",
               "RelativeDocumentMoniker": "AtelierSystem\\Windows\\NavigationWindows\\ModeratorWindow.axaml.cs",
@@ -149,8 +225,7 @@
               "RelativeToolTip": "AtelierSystem\\Windows\\NavigationWindows\\ModeratorWindow.axaml.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-19T07:58:44.57Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-19T07:58:44.57Z"
             }
           ]
         }

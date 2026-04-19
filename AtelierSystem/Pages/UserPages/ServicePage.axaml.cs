@@ -17,13 +17,17 @@ public partial class ServicePage : UserControl
     private int itemsPerPage = 3;
     private string currentCategory = "Кастомизация";
     private string currentSort = "По умолчанию";
+    private string currentCollection = "Все коллекции";
 
     public ServicePage()
     {
         InitializeComponent();
+
         LoadServices();
         UpdateServicesDisplay();
+
         sortComboBox.SelectedIndex = 0;
+        collectionFilterBox.SelectedIndex = 0;
     }
 
     private void LoadServices()
@@ -47,7 +51,7 @@ public partial class ServicePage : UserControl
             s.Category?.Name == currentCategory
         ).ToList();
 
-        ApplyCollectionFilters();
+        ApplyCollectionFilter();
         ApplySearchFilter();
         ApplySorting();
 
@@ -55,20 +59,12 @@ public partial class ServicePage : UserControl
         UpdateServicesDisplay();
     }
 
-    private void ApplyCollectionFilters()
+    private void ApplyCollectionFilter()
     {
-        var selectedCollections = new List<string>();
-
-        if (animeFilter.IsChecked == true) selectedCollections.Add("Аниме");
-        if (newYearFilter.IsChecked == true) selectedCollections.Add("Новый год");
-        if (halloweenFilter.IsChecked == true) selectedCollections.Add("Хэллоуин");
-        if (cyberpunkFilter.IsChecked == true) selectedCollections.Add("Киберпанк");
-        if (noirFilter.IsChecked == true) selectedCollections.Add("Нуар");
-
-        if (selectedCollections.Any())
+        if (currentCollection != "Все коллекции")
         {
             filteredServices = filteredServices.Where(s =>
-                s.Collection != null && selectedCollections.Contains(s.Collection.Name)
+                s.Collection != null && s.Collection.Name == currentCollection
             ).ToList();
         }
     }
@@ -237,6 +233,35 @@ public partial class ServicePage : UserControl
         return border;
     }
 
+    private string GetMasterInfo(int serviceId)
+    {
+        var masterServices = App.dataBaseContext.MasterServices
+            .Where(ms => ms.ServiceId == serviceId)
+            .ToList();
+
+        if (!masterServices.Any())
+            return string.Empty;
+
+        var masterNames = new List<string>();
+
+        foreach (var ms in masterServices)
+        {
+            var master = App.dataBaseContext.Masters.FirstOrDefault(m => m.Id == ms.MasterId);
+            if (master != null)
+            {
+                var user = App.dataBaseContext.Users.FirstOrDefault(u => u.Id == master.UserId);
+                if (user != null)
+                {
+                    masterNames.Add($"{user.FullName} ({master.QualificationLevel})");
+                }
+            }
+        }
+
+        return masterNames.Count == 1
+            ? $"Мастер: {masterNames[0]}"
+            : $"Мастера: {string.Join(", ", masterNames)}";
+    }
+
     private string GetServiceImageUri(Service service)
     {
         string category = service.Category?.Name ?? "";
@@ -293,21 +318,20 @@ public partial class ServicePage : UserControl
         }
     }
 
-    private void filter_Changed(object? sender, RoutedEventArgs e)
+    private void collectionFilterBox_SelectionChanged(object? sender, SelectionChangedEventArgs e)
     {
-        ApplyFilters();
+        if (collectionFilterBox.SelectedItem is ComboBoxItem item)
+        {
+            currentCollection = item.Content?.ToString() ?? "Все коллекции";
+            ApplyFilters();
+        }
     }
 
     private void resetFilterBtn_Click(object? sender, RoutedEventArgs e)
     {
-        animeFilter.IsChecked = false;
-        newYearFilter.IsChecked = false;
-        halloweenFilter.IsChecked = false;
-        cyberpunkFilter.IsChecked = false;
-        noirFilter.IsChecked = false;
         searchBox.Text = string.Empty;
         sortComboBox.SelectedIndex = 0;
-
+        collectionFilterBox.SelectedIndex = 0;
         ApplyFilters();
     }
 
@@ -328,37 +352,5 @@ public partial class ServicePage : UserControl
             currentPage++;
             UpdateServicesDisplay();
         }
-    }
-
-    private string GetMasterInfo(int serviceId)
-    {
-        var masterServices = App.dataBaseContext.MasterServices
-            .Where(ms => ms.ServiceId == serviceId)
-            .ToList();
-
-        if (!masterServices.Any())
-            return string.Empty;
-
-        var masterNames = new List<string>();
-
-        foreach (var ms in masterServices)
-        {
-            var master = App.dataBaseContext.Masters.FirstOrDefault(m => m.Id == ms.MasterId);
-            if (master != null)
-            {
-                var user = App.dataBaseContext.Users.FirstOrDefault(u => u.Id == master.UserId);
-                if (user != null)
-                {
-                    masterNames.Add($"{user.FullName} ({master.QualificationLevel})");
-                }
-            }
-        }
-
-        if (!masterNames.Any())
-            return string.Empty;
-
-        return masterNames.Count == 1
-            ? $"Мастер: {masterNames[0]}"
-            : $"Мастера: {string.Join(", ", masterNames)}";
     }
 }

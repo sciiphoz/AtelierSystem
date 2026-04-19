@@ -3,8 +3,6 @@ using Avalonia.Interactivity;
 using Avalonia.Media.Imaging;
 using Avalonia.Platform;
 using AtelierSystem.DBContext;
-using MsBox.Avalonia;
-using MsBox.Avalonia.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,14 +17,18 @@ public partial class ModeratorServicesPage : UserControl
     private int itemsPerPage = 3;
     private string currentCategory = "Кастомизация";
     private string currentSort = "По умолчанию";
+    private string currentCollection = "Все коллекции";
 
     public ModeratorServicesPage()
     {
         InitializeComponent();
         LoadLogo();
+
         LoadServices();
         UpdateServicesDisplay();
+
         sortComboBox.SelectedIndex = 0;
+        collectionFilterBox.SelectedIndex = 0;
     }
 
     private void LoadLogo()
@@ -38,6 +40,7 @@ public partial class ModeratorServicesPage : UserControl
         }
         catch
         {
+            // Если логотип не найден, оставляем пустым
         }
     }
 
@@ -62,7 +65,7 @@ public partial class ModeratorServicesPage : UserControl
             s.Category?.Name == currentCategory
         ).ToList();
 
-        ApplyCollectionFilters();
+        ApplyCollectionFilter();
         ApplySearchFilter();
         ApplySorting();
 
@@ -70,20 +73,12 @@ public partial class ModeratorServicesPage : UserControl
         UpdateServicesDisplay();
     }
 
-    private void ApplyCollectionFilters()
+    private void ApplyCollectionFilter()
     {
-        var selectedCollections = new List<string>();
-
-        if (animeFilter.IsChecked == true) selectedCollections.Add("Аниме");
-        if (newYearFilter.IsChecked == true) selectedCollections.Add("Новый год");
-        if (halloweenFilter.IsChecked == true) selectedCollections.Add("Хэллоуин");
-        if (cyberpunkFilter.IsChecked == true) selectedCollections.Add("Киберпанк");
-        if (noirFilter.IsChecked == true) selectedCollections.Add("Нуар");
-
-        if (selectedCollections.Any())
+        if (currentCollection != "Все коллекции")
         {
             filteredServices = filteredServices.Where(s =>
-                s.Collection != null && selectedCollections.Contains(s.Collection.Name)
+                s.Collection != null && s.Collection.Name == currentCollection
             ).ToList();
         }
     }
@@ -296,9 +291,6 @@ public partial class ModeratorServicesPage : UserControl
             }
         }
 
-        if (!masterNames.Any())
-            return string.Empty;
-
         return masterNames.Count == 1
             ? $"Мастер: {masterNames[0]}"
             : $"Мастера: {string.Join(", ", masterNames)}";
@@ -383,21 +375,20 @@ public partial class ModeratorServicesPage : UserControl
         }
     }
 
-    private void filter_Changed(object? sender, RoutedEventArgs e)
+    private void collectionFilterBox_SelectionChanged(object? sender, SelectionChangedEventArgs e)
     {
-        ApplyFilters();
+        if (collectionFilterBox.SelectedItem is ComboBoxItem item)
+        {
+            currentCollection = item.Content?.ToString() ?? "Все коллекции";
+            ApplyFilters();
+        }
     }
 
     private void resetFilterBtn_Click(object? sender, RoutedEventArgs e)
     {
-        animeFilter.IsChecked = false;
-        newYearFilter.IsChecked = false;
-        halloweenFilter.IsChecked = false;
-        cyberpunkFilter.IsChecked = false;
-        noirFilter.IsChecked = false;
         searchBox.Text = string.Empty;
         sortComboBox.SelectedIndex = 0;
-
+        collectionFilterBox.SelectedIndex = 0;
         ApplyFilters();
     }
 

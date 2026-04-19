@@ -38,8 +38,7 @@
                     
                     <TextBlock Text="Матье" 
                                FontSize="16" 
-                               VerticalAlignment="Center"
-                               Margin="0,0,20,0"/>
+                               VerticalAlignment="Center"/>
                 </StackPanel>
 
                 <StackPanel Grid.Column="1" 
@@ -109,19 +108,7 @@
                         </TextBlock>
                     </StackPanel>
 
-                    <StackPanel Grid.Row="1" 
-                                Spacing="5"
-                                Margin="10,0">
-                        
-                        <Button x:Name="servicesBtn" 
-                                Content="Услуги"
-                                Padding="10,8"
-                                Background="White"
-                                BorderBrush="Black"
-                                Cursor="Hand"
-                                Click="servicesBtn_Click">
-                        </Button>
-                    </StackPanel>
+                    <Grid Grid.Row="1"></Grid>
 
                     <StackPanel Grid.Row="2" 
                                 Margin="10,0,10,20"
@@ -137,6 +124,15 @@
                                 </TextBlock>
                             </StackPanel>
                         </Border>
+                        
+                        <Button x:Name="servicesBtn" 
+                                Content="Услуги"
+                                Padding="10,8"
+                                Background="White"
+                                BorderBrush="Black"
+                                Cursor="Hand"
+                                Click="servicesBtn_Click">
+                        </Button>
                         
                         <Button x:Name="logoutBtn" 
                                 Content="Выйти"
